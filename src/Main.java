@@ -17,21 +17,62 @@ public class Main {
         System.out.println(Arrays.toString(arrayThird)); //для проверки
 
         System.out.println("Task two");
-        System.out.println(arrayFirst[0] + ", " + arrayFirst[1] + ", " + arrayFirst[2]);
-        System.out.println(arraySecond[0] + ", " + arraySecond[1] + ", " + arraySecond[2]);
-        System.out.println(arrayThird[0] + ", " + arrayThird[1] + ", " + arrayThird[2] + ", " + arrayThird[3] + ", " + arrayThird[4]);
+        for (int i = 0; i < arrayFirst.length-1; i++) {
+            if (i != arrayFirst.length) {
+                System.out.print(arrayFirst[i] + ", ");
+            }
+        }
+        System.out.print(arrayFirst[arrayFirst.length-1]);
+        System.out.println();
+
+        for (int i = 0; i < arraySecond.length-1; i++) {
+            if (i != arraySecond.length) {
+                System.out.print(arraySecond[i] + ", ");
+            }
+        }
+        System.out.print(arraySecond[arraySecond.length-1]);
+        System.out.println();
+
+        for (int i = 0; i < arrayThird.length-1; i++) {
+            if (i != arrayThird.length) {
+                System.out.print(arrayThird[i] + ", ");
+            }
+        }
+        System.out.print(arrayThird[arrayThird.length-1]);
+        System.out.println();
 
         System.out.println("Task three");
-        System.out.println(arrayFirst[2] + ", " + arrayFirst[1] + ", " + arrayFirst[0]);
-        System.out.println(arraySecond[2] + ", " + arraySecond[1] + ", " + arraySecond[0]);
-        System.out.println(arrayThird[4] + ", " + arrayThird[3] + ", " + arrayThird[2] + ", " + arrayThird[1] + ", " + arrayThird[0]);
+        for (int i = arrayFirst.length-1; i > 0; i--) {
+            if (i != 0) {
+                System.out.print(arrayFirst[i] + ", ");
+            }
+        }
+        System.out.print(arrayFirst[0]);
+        System.out.println();
+
+        for (int i = arraySecond.length-1; i > 0; i--) {
+            if (i != 0) {
+                System.out.print(arraySecond[i] + ", ");
+            }
+        }
+        System.out.print(arraySecond[0]);
+        System.out.println();
+
+        for (int i = arrayThird.length-1; i > 0; i--) {
+            if (i != 0) {
+                System.out.print(arrayThird[i] + ", ");
+            }
+        }
+        System.out.print(arrayThird[0]);
+        System.out.println();
 
         System.out.println("Task four");
         for (int i = 0; i < arrayFirst.length; i++) {
             if (arrayFirst[i] % 2 != 0) {
                 arrayFirst[i]++;
+                System.out.print(arrayFirst[i] + " ");
             }
         }
-        System.out.print(Arrays.toString(arrayFirst));
+        //System.out.print(Arrays.toString(arrayFirst));
     }
 }
