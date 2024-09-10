@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println("Task two");
         for (int i = 0; i < arrayFirst.length-1; i++) {
-            if (i != arrayFirst.length) {
+            if (i < arrayFirst.length) {
                 System.out.print(arrayFirst[i] + ", ");
             }
         }
@@ -26,7 +26,7 @@ public class Main {
         System.out.println();
 
         for (int i = 0; i < arraySecond.length-1; i++) {
-            if (i != arraySecond.length) {
+            if (i < arraySecond.length) {
                 System.out.print(arraySecond[i] + ", ");
             }
         }
@@ -34,7 +34,7 @@ public class Main {
         System.out.println();
 
         for (int i = 0; i < arrayThird.length-1; i++) {
-            if (i != arrayThird.length) {
+            if (i < arrayThird.length) {
                 System.out.print(arrayThird[i] + ", ");
             }
         }
@@ -42,7 +42,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Task three");
-        for (int i = arrayFirst.length-1; i > 0; i--) {
+        for (int i = arrayFirst.length-1; i >= 0; i--) {
             if (i != 0) {
                 System.out.print(arrayFirst[i] + ", ");
             }
@@ -50,7 +50,7 @@ public class Main {
         System.out.print(arrayFirst[0]);
         System.out.println();
 
-        for (int i = arraySecond.length-1; i > 0; i--) {
+        for (int i = arraySecond.length-1; i >= 0; i--) {
             if (i != 0) {
                 System.out.print(arraySecond[i] + ", ");
             }
@@ -58,7 +58,7 @@ public class Main {
         System.out.print(arraySecond[0]);
         System.out.println();
 
-        for (int i = arrayThird.length-1; i > 0; i--) {
+        for (int i = arrayThird.length-1; i >= 0; i--) {
             if (i != 0) {
                 System.out.print(arrayThird[i] + ", ");
             }
